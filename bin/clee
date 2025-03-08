@@ -1,0 +1,55 @@
+#! /usr/bin/env ruby
+# encoding: utf-8
+
+clee do
+#
+  tldr <<~____
+    ~> clee new $script_name
+  ____
+
+  run :new do
+    name = argv.shift
+    template = DATA.read
+    script_name = name ? "#{ name.inspect } " : ""
+    puts template.gsub(%r`[$]script_name\s*`, script_name)
+  end
+end
+
+BEGIN {
+  bindir = File.expand_path(__dir__)
+  root = File.dirname(bindir)
+  libdir = File.join(root, 'lib')
+
+  require "#{ libdir }/clee.rb"
+}
+
+__END__
+#! /usr/bin/env ruby
+# encoding: utf-8
+# rubocop:disable all
+
+clee $script_name do
+  tldr <<~____
+    NAME
+      # FIXME
+
+    TL;DR;
+      # FIXME
+  ____
+
+  run do
+    p [@mode, @argv, @options]
+  end
+
+  run :foo do
+    p [@mode, @argv, @options]
+  end
+
+  run :foo, :bar do
+    p [@mode, @argv, @options]
+  end
+end
+
+BEGIN {
+  require "clee"
+}
