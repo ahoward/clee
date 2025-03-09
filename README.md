@@ -255,9 +255,13 @@ Overall, Clee is a powerful and flexible library that makes it easy to create co
 
 ---
 
+SING IT 🎵
+----------
 * **DOCS are dead, long live AI!**
 * **UIs are dead, long live CLIS!**
 
+FINALLY
+-------
 > why `clee`, that is honestly such a stupid name...
 
 a good friend used to pronounce 'cli' as 'clee'.  it stuck.  i like it.
