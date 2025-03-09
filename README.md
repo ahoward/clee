@@ -229,7 +229,9 @@ something like this
 ```
 
 which might produce something like this ->
-```markdown
+
+---
+
 Clee is a Ruby library that provides a simple way to create command-line interfaces (CLI) for Ruby applications. It allows developers to define commands, options, and parameters for their application, and handles the parsing and execution of these commands.
 
 The core features of Clee include:
@@ -250,7 +252,8 @@ Some of the key concepts in Clee include:
 * Modes: These are alternative behaviors that a command can exhibit, depending on the options or parameters passed to it.
 
 Overall, Clee is a powerful and flexible library that makes it easy to create command-line interfaces for Ruby applications. Its simple and intuitive API makes it easy to use, even for developers who are new to CLI development.
-```
+
+---
 
 * **DOCS are dead, long live AI!**
 * **UIs are dead, long live CLIS!**
