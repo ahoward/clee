@@ -8,7 +8,9 @@ TL;DR;
 
 INSTALL
 -------
+```sh
   gem install clee
+```
 
 URI
 ---
@@ -57,7 +59,7 @@ downloads](https://drawohara.io/rubygems/)
     @loc: 2623
   ```
 
-you can use this to decide which to use:
+* you can use this to decide which to use:
 
 ```ruby
   case
@@ -215,10 +217,17 @@ clee do
 end
 ```
 
+`clee` ships with a lil code-gen-thang
+```sh
+~> clee new my_clee > my_clee
+~> chmod 755 my_clee
+~> ./my_clee
+```
+
 i could write more docs but, they would then outnumber the LOC of the library
 so:
 
-1. see [./lib/clee.rb]('./lib/clee.rb')
+1. see [./lib/clee.rb](./lib/clee.rb)
 2. if that still doesn't float your boat install `ima`, a universal
 command-line filter built on `clee`, that brings AI to your CLI and do
 something like this
