@@ -271,6 +271,10 @@ SING IT 🎵
 
 FINALLY
 -------
-> why `clee`, that is honestly such a stupid name...
+> why `clee`? that is honestly such a stupid name...
 
 a good friend used to pronounce 'cli' as 'clee'.  it stuck.  i like it.
+
+> i still need you write more docs for this free code
+
+[c'mon in!](https://github.com/ahoward/clee/pulls)
