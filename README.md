@@ -89,7 +89,7 @@ don't, including:
 - fancy color'd logging
 - modes, and sub-modes
 
-the smallest clee script looks like this
+##### the smallest clee script looks like this
 
 ```ruby
 require 'clee'
@@ -101,7 +101,7 @@ clee do
 end
 ```
 
-you can name your scripts
+##### you can name your scripts
 
 ```ruby
 require 'clee'
@@ -113,7 +113,7 @@ clee do
 end
 ```
 
-you can alter the default tldr, and help messages
+##### you can alter the default tldr, and help messages
 
 ```ruby
 require 'clee'
@@ -139,7 +139,7 @@ clee do
 end
 ```
 
-specifying params is trivial
+##### specifying params is trivial
 
 ```ruby
 require 'clee'
@@ -177,7 +177,7 @@ clee do
 end
 ```
 
-modes, and sub-modes, are supported
+##### modes, and sub-modes, are supported
 
 ```ruby
 require 'clee'
@@ -197,14 +197,14 @@ clee :my_clee do
 end
 ```
 
-assuming you saved the above as `my_clee`, you could then do
+##### assuming you saved the above as `my_clee`, you could then do
 ```sh
   ~> my_clee foo     #=> 42
   ~> my_clee foo bar #=> 42.0
   ~> my_clee         #=> 42.42
 ```
 
-`clee` scripts have a sweet dependency-less colored logger that understands what a #tty really is...
+##### `clee` scripts have a sweet dependency-less colored logger that understands what a #tty really is...
 ```ruby
 require 'clee'
 
@@ -217,7 +217,7 @@ clee do
 end
 ```
 
-`clee` ships with a lil code-gen-thang
+##### `clee` ships with a lil code-gen-thang
 ```sh
 ~> clee new my_clee > my_clee
 ~> chmod 755 my_clee
