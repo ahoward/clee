@@ -77,7 +77,7 @@ downloads](https://drawohara.io/rubygems/)
 API
 ---
 
-`clee`'s api is very simple.  it has every feature you need, and none that you
+##### `clee`'s api is very simple.  it has every feature you need, and none that you
 don't, including:
 
 - auto generated help messages
