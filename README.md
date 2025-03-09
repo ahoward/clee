@@ -218,7 +218,7 @@ end
 i could write more docs but, they would then outnumber the LOC of the library
 so:
 
-1. see [./lib/clee.rb]
+1. see [./lib/clee.rb]('./lib/clee.rb')
 2. if that still doesn't float your boat install `ima`, a universal
 command-line filter built on `clee`, that brings AI to your CLI and do
 something like this
