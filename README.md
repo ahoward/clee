@@ -202,6 +202,59 @@ assuming you saved the above as `my_clee`, you could then do
   ~> my_clee         #=> 42.42
 ```
 
-> why `clee`, that is such a stupid name....
+`clee` scripts have a sweet dependency-less colored logger that understands what a #tty really is...
+```ruby
+require 'clee'
+
+clee do
+  def run
+    log 'hai!'
+    log 'hai!', level: :warning
+    log 'blue', color: :blue
+  end
+end
+```
+
+i could write more docs but, they would then outnumber the LOC of the library
+so:
+
+1. see [./lib/clee.rb]
+2. if that still doesn't float your boat install `ima`, a universal
+command-line filter built on `clee`, that brings AI to your CLI and do
+something like this
+
+```sh
+  ~> gem install clee ima
+  ~> ima explain clee to me --context=$(gem which clee)
+```
+
+which might produce something like this ->
+```markdown
+Clee is a Ruby library that provides a simple way to create command-line interfaces (CLI) for Ruby applications. It allows developers to define commands, options, and parameters for their application, and handles the parsing and execution of these commands.
+
+The core features of Clee include:
+
+* Command definition: Clee allows developers to define commands and their associated options and parameters.
+* Option parsing: Clee can parse command-line options and parameters, and provides a simple way to define and handle these options.
+* Parameter handling: Clee provides a way to handle command-line parameters, including required and optional parameters.
+* Help generation: Clee can generate help text for commands and options, making it easy to provide documentation for users.
+* Logging: Clee provides a logging mechanism that allows developers to log messages at different levels (e.g. debug, info, warning, error).
+
+Clee is designed to be flexible and customizable, making it easy to integrate into existing Ruby applications. It also provides a number of features that make it easy to use, including automatic help generation and logging.
+
+Some of the key concepts in Clee include:
+
+* Commands: These are the top-level actions that a user can perform with the application.
+* Options: These are the flags or switches that can be used to modify the behavior of a command.
+* Parameters: These are the values that are passed to a command or option.
+* Modes: These are alternative behaviors that a command can exhibit, depending on the options or parameters passed to it.
+
+Overall, Clee is a powerful and flexible library that makes it easy to create command-line interfaces for Ruby applications. Its simple and intuitive API makes it easy to use, even for developers who are new to CLI development.
+```
+
+* **DOCS are dead, long live AI!**
+* **UIs are dead, long live CLIS!**
+
+> why `clee`, that is honestly such a stupid name...
 
 a good friend used to pronounce 'cli' as 'clee'.  it stuck.  i like it.
